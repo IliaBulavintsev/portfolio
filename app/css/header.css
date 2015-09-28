@@ -1,0 +1,39 @@
+.header{
+	background: url(img/bg-head.png);
+	background-repeat: repeat-x;
+	padding-top: 10px;
+	min-width: 780px;
+	margin-bottom: 36px;
+}
+.header:after{
+	content: " ";
+	display: block;
+	height: 7px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+  	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  	height: 7px;
+}
+.logo{
+	float: left;
+	margin-left: 110px;
+	margin-bottom: 7px;
+}
+.social_item{
+	display: inline-block;
+	margin-left: 10px;
+}
+li.social_item:first-child{
+	margin-left: 0;
+}
+
+.social{
+	float:right;
+	margin-right: 105px;
+}
+
+.social ul{
+		padding: 0;
+}
+
+

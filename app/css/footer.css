@@ -1,0 +1,50 @@
+@import url(fonts/stylesheet.css);
+
+.footer{
+	width: 100%;
+	min-width: 780px;
+	background-color: #f7f7f7;
+	height: 61px;
+	margin-top: -61px;
+	position: relative;
+	color: #727070;
+}
+.locker{
+	position: absolute;
+	margin-top: 29.5px;
+	float: left;
+	left: 369px;
+}
+.center{
+	position: absolute;
+	left:418px;
+	top: 50%;
+	margin-top: -0.625;
+}
+.copy{
+	margin-left: 100px;
+	font-family: "OpenSans";
+	font-weight: 300;
+	font-size: 14px;
+}
+.enter{
+	font-family: "OpenSans";
+	font-weight: bold;
+	font-size: 14px;
+	color: #9c9c9c;
+	text-decoration: none;
+	  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.85);
+}
+.text{
+	text-indent: 30px;
+		font-family: "OpenSans";
+	font-weight: bold;
+	font-size: 14px;
+	color: #9c9c9c;
+	text-decoration: none;
+	  line-height: 1.2;
+  text-align: left;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.85);
+}

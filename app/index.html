@@ -12,10 +12,18 @@
 		<meta name="keywords" content="key words here">
 		<meta name="author" content="author Name here">
 		<!--CSS-->
+		<link rel="shortcut icon" href="css/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/sprite.css">
+		<link rel="stylesheet" href="css/wrapper.css">
+
 		<!-- JS modernizer -->
- 		<!-- <script src="/js/modernizr.js"></script> -->
+		<!--[if lt IE 9]>
+    	<script src="bower/html5shiv/dist/html5shiv.js"></script>
+		<![endif]-->
 
 	</head>
 	<body>
@@ -23,6 +31,229 @@
 		<!--[if lt IE 8]>
 			<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
 		<![endif]-->
+		<!--blocks-->
+			<div class="wrapper clearfix">
+		<!--Header-->
+				<div class="header clearfix ">
+					<div class="logo">
+						<a href="">
+						<img src="css/img/logo.png" height="71" width="95" alt="ЛофтСкул">
+						</a>
+					</div>
+					<div class="social">
+						<ul>
+							<li class="social_item">
+								<a href="#vk" class="socials fb">
+									<span class="hidden_link">facebook</span>
+								</a>
+							</li>
+							<li class="social_item">
+								<a href="#fb" class="socials vk">
+									<span class="hidden_link">vk</span>
+								</a>
+							</li>
+							<li class="social_item">
+								<a href="#tw" class="socials tw">
+									<span class="hidden_link">twitter</span>
+								</a>
+							</li>
+							<li class="social_item">
+								<a href="#git" class="socials gh">
+									<span class="hidden_link">git</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			<div class="main_content clearfix">
+
+		<!--Aside-->
+				<aside class="clearfix aside">
+					<nav class="nav_menu border_box">
+						<a href="#about" class="activate first_nav">
+							<span>Обо мне</span>
+						</a>
+						<a href="#my_portfolio">
+							<span>Мои работы</span>
+						</a>
+						<a href="#call_back" class="last_nav">
+							<span>Обратная связь</span>
+						</a>
+					</nav>
+
+					<nav class="contacts clearfix border_box">
+						<div class="first border_box">
+							<span>Контакты</span>
+						</div>
+						<div class="contacts_data clearfix">
+							<div class="sprite_contacts email left"></div>
+							<div class="rect left">
+							</div>
+							<div class="contacts_link left ">
+								<a href="mailto:twintipper@mail.ru" class="contact_href" >
+								<span class="contact_href">twintipper@mail.ru</span>
+								</a>
+							</div>
+						</div>
+						<div class="contacts_data clearfix">
+							<div class="sprite_contacts telephone left"></div>
+							<div class="rect left">
+							</div>
+							<div class="contacts_link left ">
+								<a href="tel:+79163255418" class="contact_href">
+									<span>+79163255418</span>
+								</a>
+							</div>
+						</div>
+						<div class="contacts_data last clearfix">
+							<div class="sprite_contacts skype left"></div>
+							<div class="rect left">
+							</div>
+							<div class="contacts_link  left ">
+								<a href="skype:twintippper:?chat" class="contact_href">
+									<span>twintippper</span>
+								</a>
+							</div>
+						</div>
+					</nav>
+				</aside>
+			
+		<!--SECTION-->
+				<section class="clearfix section ">
+						<article class="article  border_box clearfix">
+							<div class="header_article ">Основная информация</div>
+							<div class="content clearfix with_ava">
+								<div class=" foto_border">
+									<div class="foto">фото</div>
+								</div>
+								<div class="info">
+									<p class="p_info semi">
+										<span class="regular">Меня зовут: </span>
+										<span class="regular-semi">Булавинцев Илья Геннадьевич</span>
+									</p>
+									<p class="p_info semi">
+										<span class="regular">Мой возраст: </span>
+										<span class="regular-semi">19 лет</span>
+									</p>
+									<p class="p_info semi">
+										<span class="regular">Мой город: </span>
+										<span class="regular-semi">Москва</span>
+									</p>
+									<p class="p_info normal">
+										<span class="regular">Моя специализация: </span>
+										<span class="regular-semi">FRONTEND разработчик</span>
+									</p>							
+									<p class="p_info skills_p">
+										<span class="regular">Ключевые наваки: </span>
+										<ul class="skills_ul">
+											<li class="skills_li">
+												<div class="skills skills-CSS">
+													<span class="hidden_link">css</span>
+												</div>
+											</li>
+											<li class="skills_li">
+												<div class="skills skills-GIT">
+													<span class="hidden_link">git</span>
+												</div>
+											</li>
+											<li class="skills_li">
+												<div class="skills skills-GULP">
+													<span class="hidden_link">gulp</span>
+												</div>
+											</li>
+											<li class="skills_li">
+												<div class="skills skills-HTML">
+													<span class="hidden_link">html</span>
+												</div>
+											</li>
+											<li class="skills_li">
+												<div class="skills skills-JAVASCRIPT">
+													<span class="hidden_link">js</span>
+												</div>
+											</li>
+											<li class="skills_li">
+												<div class="skills skills-PHP">
+													<span class="hidden_link">php</span>
+												</div>
+											</li>
+											<li class="skills_li">
+												<div class="skills skills-XML">
+													<span class="hidden_link">xml</span>
+												</div>
+											</li>
+										</ul>
+									</p>
+								</div>
+							</div>
+						</article>
+						<article class="article clearfix">
+							<div class="header_article">Опыт работы</div>
+							<div class="content clearfix">
+								<ul class="ul_icons clearfix">
+								<li class="clearfix li_ico ">
+									<div class="wrapper_for_ico"><div class="ico ico-case "></div></div>
+									<div class="ul_icons_info_block ">
+									<p class="ul_icons_info_first regular semi">"ИП Боровицкий" - Продавец дисков</p>
+									<p class="ul_icons_info_second regular-semi ">Сентябрь 2012 - Август 2013</p>
+									</div>
+								</li>
+								<div class="ico_border"></div>
+								<li class="clearfix li_ico ">
+									<div class="wrapper_for_ico"><div class="ico ico-case "></div></div>
+									<div class="ul_icons_info_block ">
+									<p class="ul_icons_info_first regular semi">"Магнит, Розничная сеть" - Ведущий аналитик по внедрению Oracle</p>
+									<p class="ul_icons_info_second regular-semi semi">Август 2013 - Июль 2015</p>
+									</div>
+								</li>					
+								</ul>
+							</div>					
+						</article>
+						<article class="article clearfix">
+							<div class="header_article">Образование</div>	
+							<div class="content clearfix">
+							<ul class="ul_icons clearfix">
+								<li class="clearfix li_ico ">
+									<div class="wrapper_for_ico"><div class="ico ico-school "></div></div>
+									<div class="ul_icons_info_block ">
+									<p class="ul_icons_info_first regular semi">Полное среднее. Физико-математический лицей № 30</p>
+									<p class="ul_icons_info_second regular-semi semi">1994 - 2004</p>
+									</div>
+								</li>
+								<div class="ico_border"></div>
+								<li class="clearfix li_ico ">
+									<div class="wrapper_for_ico"><div class="ico ico-graduate "></div></div>
+									<div class="ul_icons_info_block ">
+									<p class="ul_icons_info_first regular semi">Незаконченное высшее. МГТУ им. Баумана</p>
+									<p class="ul_icons_info_second regular-semi semi">Сентябрь 2012 - по настоящее время</p>
+									</div>
+								</li>
+								<div class="ico_border"></div>
+								<li class="clearfix li_ico ">
+									<div class="wrapper_for_ico"><div class="ico ico-file "></div></div>
+									<div class="ul_icons_info_block ">
+									<p class="ul_icons_info_first regular semi">Курсы Loftschool.ru</p>
+									<p class="ul_icons_info_second regular-semi semi">Сентябрь 2015 - по настоящее время</p>
+									</div>
+								</li>						
+								</ul>
+								
+							</div>				
+						</article>
+				</section>	
+			</div>
+		</div>
+<!--FOOTER-->	
+		<div class="footer clearfix">
+			<div class="locker">
+				<a href="#login" class="lock locked text">
+					<span class="hidden_link">lock</span>
+					<span class="">вход</span>
+				</a>
+			</div>
+			<span class="copy center">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+
+		</div>			
 
 		<!--SCRIPTS-->
 		<script src="bower/jquery/jquery.js"></script>
