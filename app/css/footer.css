@@ -13,16 +13,15 @@
 	position: absolute;
 	margin-top: 29.5px;
 	float: left;
-	left: 369px;
+	left: 27.6%;
 }
 .center{
 	position: absolute;
-	left:418px;
+	left:36.6%;
 	top: 50%;
 	margin-top: -0.625;
 }
 .copy{
-	margin-left: 100px;
 	font-family: "OpenSans";
 	font-weight: 300;
 	font-size: 14px;
