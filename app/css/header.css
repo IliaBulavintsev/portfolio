@@ -18,12 +18,14 @@
 	float: left;
 	margin-left: 110px;
 	margin-bottom: 7px;
+	height:71px; 
+	width:95px;
 }
 .social_item{
 	display: inline-block;
 	margin-left: 10px;
 }
-li.social_item:first-child{
+.social_item:first-child{
 	margin-left: 0;
 }
 
@@ -32,7 +34,7 @@ li.social_item:first-child{
 	margin-right: 105px;
 }
 
-.social ul{
+.social_list{
 		padding: 0;
 }
 
