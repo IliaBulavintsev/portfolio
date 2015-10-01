@@ -1,0 +1,125 @@
+.section{
+	float: right;
+	width:652px;
+}
+.header_article{
+	background-color: #8a8787;
+	width: 100%;
+	text-indent: 42px;
+	color: #eeedec;
+	padding-top: 14px;
+	padding-bottom: 15px;
+	margin-bottom: 38px;
+	border-radius: 4px 4px 2px 2px;
+	font-family: "OpenSans-Semi";
+	font-size: 24px;
+  background-image: -moz-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+  border: 1px solid #636363;
+  margin-left: -1px;
+}
+.article{
+	background-color: #f1f0ef;
+	margin-bottom: 38px;
+	border-radius: 4px 4px 4px 4px;
+	border: 1px solid #c5c5c5;
+	border-top: 0px;
+}
+.content{
+	padding-left: 42px;
+	margin-bottom: 37px;
+}
+/*--ARTICLE--*/
+
+.foto_border {
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 9px solid #f5f4f3;
+	box-shadow: 0 0 1px #000;
+	margin: 0; 
+	margin-right: 36px;
+	float: left;
+	position: absolute;
+}
+
+.info{
+	float: left;
+	margin-left: 188px; 
+	padding: 0;
+}
+.p_info{
+	margin-top: 0;
+	margin-right: 10px;	
+	list-style-type: none;
+}
+.normal{
+	margin-bottom: 1em;
+}
+.semi{
+	margin-bottom: 0.5em;
+}
+
+/*LISHKI*/
+.ul_icons{
+	padding-left: 0;
+	padding-right: 47px;
+	margin: 0;
+	list-style: none;
+}
+.li_ico {
+	position: relative;
+	padding-left: 97px;
+}
+.ico_border{
+	margin-top: 19px;
+	margin-bottom: 19px;
+  border-radius: 1px;
+  background-color: rgb(246, 245, 244);
+  box-shadow: inset 0px 1px 1px 0px rgba(128, 128, 128, 0.29);
+  width: 560px;
+  height: 2px;
+
+}
+.ul_icons_info_block{
+ float: left;
+ width:463px;
+}
+.ul_icons_info_first{
+	margin-top: 0; 
+}
+.ul_icons_info_second{
+	margin-top: 0; 
+}
+
+.wrapper_for_ico{
+	overflow: hidden;
+	height: 55px;
+	width: 54px;
+	float: left;
+    margin: 0;
+    margin-right: 43px;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.625em;
+	margin-top: -27.5px; 
+	margin-left: -97px; 
+}
+
+/*SKILLS*/
+.skills_li{
+	display: inline-block;
+}
+.skills_ul{
+	padding: 0;
+	margin-left: 10px;
+	float: right;
+	max-width: 250px;
+}
+
+.skills_p{
+	float: left;
+}
