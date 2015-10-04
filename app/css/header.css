@@ -1,5 +1,6 @@
 .wrapper_header{
-	width: 1200px;
+	min-width: 990px;
+	max-width: 1200px;
 	margin: 0 auto 0 auto;
 }
 .header{

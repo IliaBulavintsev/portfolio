@@ -1,17 +1,20 @@
 @import url(fonts/stylesheet.css);
 
 .footer{
-	width: 100%;
+	min-width: 100%;
 	background-color: #f7f7f7;
+	background-repeat: repeat-x;
 	height: 61px;
 	margin-top: -61px;
 	color: #727070;
 }
 .footer_wrap{
 	position: relative;
-	width: 960px;
+	min-width: 990px;
+	max-width: 1200px;
 	height: 100%;
-	margin: auto;
+	margin: 0 auto 0 auto;
+	background-color: #f7f7f7;
 
 }
 .locker{
@@ -25,7 +28,7 @@
 	position: absolute;
 	top: 50%;
 	margin-top: -0.625em;
-	left: 292px;
+	left: 291px;
 }
 .copy{
 	font-family: "OpenSans";
