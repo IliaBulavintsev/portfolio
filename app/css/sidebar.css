@@ -5,6 +5,7 @@
 	min-width: 990px; 
 	height: auto;
 	overflow: hidden;
+	position: relative;
 }
 .wrapper:after{
 	content: " ";

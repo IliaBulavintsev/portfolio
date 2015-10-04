@@ -1,6 +1,6 @@
 .wrapper_form{
 	width: 403px;
-	margin: 0 auto 275px auto;
+	margin: 0 auto 274px auto;
 }
 .input{
  width: 190px;
@@ -89,8 +89,7 @@
   width: 121px;
   height: 37px;
   font-size: 14px;
-  text-align: center;
-  line-height: 2.5em;
+
 }
 .reset:hover{
   background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
@@ -117,8 +116,16 @@
 .margin_button_right{
 	margin-right: 30px;
 }
-
-
+.last_row{
+  margin-bottom: 0px;
+}
+.callback_article{
+  margin-bottom: 300px;
+}
+.light_font{
+    font-family: 'OpenSans';
+  font-weight: 300px;
+}
 
 
 

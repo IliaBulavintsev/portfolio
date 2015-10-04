@@ -1,20 +1,17 @@
 @import url(fonts/stylesheet.css);
 
 .footer{
-	min-width: 100%;
+	min-width: 990px;
 	background-color: #f7f7f7;
-	background-repeat: repeat-x;
 	height: 61px;
 	margin-top: -61px;
 	color: #727070;
 }
 .footer_wrap{
 	position: relative;
-	min-width: 990px;
-	max-width: 1200px;
+	width: 960px;
 	height: 100%;
 	margin: 0 auto 0 auto;
-	background-color: #f7f7f7;
 
 }
 .locker{
