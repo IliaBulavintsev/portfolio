@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="css/sidebar.css">
 		<link rel="stylesheet" href="css/content_about.css">
 		<link rel="stylesheet" href="css/content_portfolio.css">
+		<link rel="stylesheet" href="css/content_callback.css">
 
 		<!-- JS modernizer -->
 		<!--[if lt IE 9]>
@@ -29,7 +30,6 @@
 
 	</head>
 	<body>
-
 		<!--[if lt IE 8]>
 			<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
 		<![endif]-->
@@ -39,7 +39,7 @@
 			<header class="header clearfix">
 				<div class="wrapper_header clearfix ">
 					<div class="logo">
-						<a href="">
+						<a href="index.html">
 							<img src="css/img/logo.png" alt="ЛофтСкул" class="logo_img">
 						</a>
 					</div>
@@ -75,13 +75,13 @@
 			<!--Aside-->
 					<aside class="clearfix aside">
 						<nav class="nav_menu border_box">
-							<a href="#about" class="nav_menu_link activate first_nav">
+							<a href="index.html" class="nav_menu_link  first_nav">
 								<span class="nav_menu_link_text">Обо мне</span>
 							</a>
-							<a href="#my_portfolio" class="nav_menu_link">
+							<a href="portfolio.html" class="nav_menu_link activate">
 								<span class="nav_menu_link_text">Мои работы</span>
 							</a>
-							<a href="#call_back" class="nav_menu_link last_nav">
+							<a href="callback.html" class="nav_menu_link last_nav ">
 								<span class="nav_menu_link_text">Обратная связь</span>
 							</a>
 						</nav>
@@ -133,6 +133,13 @@
 											<div class="project_item_box border_box">
 												<div class="photo_wrapper">
 													<img src="css/img/a-industry.png"  alt="" class="portfolio_img">
+													<div class="mask">  
+    													<a href="http://a-industry.ru" target="_blank"class="more_link">
+    														<div class="more_link_border">
+    															Подробнее
+    														</div>
+    													</a>  
+  													</div>  
 												</div>
 												<div class="project_link_box ">
 													<a href="http://a-industry.ru" class="project_link regular" target="_blank">a-industry.ru</a>
@@ -146,6 +153,13 @@
 											<div class="project_item_box border_box ">
 												<div class="photo_wrapper .portfolio .portfolio-dombeton">
 													<img src="css/img/dombeton.png" alt="" class="portfolio_img">
+													<div class="mask">  
+    													<a href="http://домгазобетон.рф" target="_blank"class="more_link">
+    														<div class="more_link_border">
+    															Подробнее
+    														</div>
+    													</a>  
+  													</div>  
 												</div>
 												<div class="project_link_box ">
 													<a href="http://домгазобетон.рф" class="project_link regular" target="_blank">домгазобетон.рф</a>
@@ -159,6 +173,13 @@
 											<div class="project_item_box border_box">
 												<div class="photo_wrapper border_box">
 													<img src="css/img/crm.png" alt="" class="portfolio_img">
+													<div class="mask">  
+    													<a href="http://crmconsulting.biz" target="_blank"class="more_link">
+    														<div class="more_link_border">
+    															Подробнее
+    														</div>
+    													</a>  
+  													</div>  
 												</div>
 												<div class="project_link_box ">
 													<a href="http://crmconsulting.biz" class="project_link regular" target="_blank">crmconsulting.biz</a>
@@ -172,6 +193,13 @@
 											<div class="project_item_box border_box">
 												<div class="photo_wrapper">
 													<img src="css/img/landing.png" alt="" class="portfolio_img">
+													<div class="mask">  
+    													<a href="http://landingsloft.ru" target="_blank"class="more_link">
+    														<div class="more_link_border">
+    															Подробнее
+    														</div>
+    													</a>  
+  													</div>  
 												</div>
 												<div class="project_link_box ">
 													<a href="http://landingsloft.ru" class="project_link regular" target="_blank">landingsloft.ru</a>
@@ -185,6 +213,13 @@
 											<div class="project_item_box border_box">
 												<div class="photo_wrapper">
 													<img src="css/img/yasnow..png"  alt="" class="portfolio_img">
+													<div class="mask">  
+    													<a href="http://yasnow.biz" target="_blank"class="more_link">
+    														<div class="more_link_border">
+    															Подробнее
+    														</div>
+    													</a>  
+  													</div>  
 												</div>
 												<div class="project_link_box ">
 													<a href="http://yasnow.biz" class="project_link regular" target="_blank">yasnow.biz</a>
@@ -206,8 +241,11 @@
 												</div>
 											
 											</div>
-											<div class="popup_modal">
+											<div class="popup_modal" id="popup_modal">
 													привет всем!!!!!
+													ыальывд
+													ыавваыавы
+													ваыавы
 											</div>											
 										</li>
 									</ul>
@@ -216,12 +254,44 @@
 					</section>	
 				</div>
 			</div>
+			<div class="popup clearfix">
+				<div class="wrapper_form_add clearfix">
+				<form action="" class="content_popup clearfix">
+					<div class="close_wrapper">
+						<img src="css/img/x.png"  alt="close">
+					</div>
+					<div class="popup_wrapper_form">
+						<div class="wrapper_row_add">
+							<label class="lable_input regular">Название проекта</label>
+							<input type="text" class="input_add_form" placeholder="Введите название">
+						</div>
+						<div class="wrapper_row_add clearfix">
+							<label class="lable_input regular">Картинка проекта</label>
+							<input type="text" class="input_add_form add_img" placeholder="Загрузите изображение">
+							<div class="wrapper_for_cloud border_box">
+								<input type="file" class="input_file">
+							</div>
+
+						</div>
+						<div class="wrapper_row_add">
+							<label class="lable_input regular">URL проекта</label>
+							<input type="text" class="input_add_form" placeholder="Добавьте ссылку">
+						</div>
+						<div class="wrapper_row_add">
+							<label class="lable_input regular">Описание</label>
+							<textarea  class="input_add_form textarea_add_form" placeholder="Пара слов о Вашем проекте"></textarea>
+						</div>
+					</div>
+					<input type="submit" value="Добавить" class="submit regular margin_submit_add">
+				</form>
+				</div>
+			</div>
 		</div>
 <!--FOOTER-->	
 		<div class="footer clearfix">
 			<div class="footer_wrap">
 				<div class="locker">
-					<a href="#login" class="lock locked text">
+					<a href="login.html" class="lock locked text">
 						вход
 					</a>
 				</div>

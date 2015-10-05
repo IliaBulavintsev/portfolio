@@ -27,6 +27,16 @@
   text-indent: 8px;
   font-size: 12px;
 }
+.border:focus{
+  border-width: 1px;
+  border-color: rgb(127, 202, 230);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(180, 105, 72);
+  border-radius: 3px;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(113, 111, 111, 0.1);
+  outline: none;
+}
 .lable_input{
 	display: block;
 	font-size: 14px;
@@ -65,6 +75,7 @@
   height: 37px;
   z-index: 359;
   font-size: 14px;
+  outline-style: none;
 }
 .submit:hover {
   border-radius: 5px;
@@ -89,6 +100,7 @@
   width: 121px;
   height: 37px;
   font-size: 14px;
+  outline-style: none;
 
 }
 .reset:hover{
@@ -126,7 +138,4 @@
     font-family: 'OpenSans';
   font-weight: 300px;
 }
-
-
-
 

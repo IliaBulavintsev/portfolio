@@ -50,6 +50,16 @@
   font-size: 12px;
  
 }
+.input_login_border:focus{
+  border-width: 1px;
+  border-color: rgb(127, 202, 230);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(180, 105, 72);
+  border-radius: 3px;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(113, 111, 111, 0.1);
+  outline: none;
+}
 .email_login{
   background: url(img/email.png) no-repeat;
   background-size: 23px 17px;

@@ -67,6 +67,17 @@
   background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
 }
+.nav_menu a:active {
+  background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+  color: #eeedec;
+}
+.disable_link{
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */
+}
 .nav_menu a.activate{
   background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);

@@ -29,6 +29,14 @@
   background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+  cursor: pointer;
+}
+.add_link:active{
+  background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
+  box-shadow: inset 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .project_item_box{
@@ -43,6 +51,7 @@
 	height:121px;
 	border-bottom: 1px solid #a5a8aa;
 	overflow: hidden;
+	position: relative;
 }
 .portfolio_img{
 	width: 101%;
@@ -58,6 +67,7 @@
 	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
 	padding-top: 13px;
 	padding-bottom: 13px;
+	word-wrap: break-word;
 
 }
 .project_link{
@@ -87,6 +97,178 @@
 
 
 
-.popup_modal{
+#popup_modal{
 	display: none;
+	width: 100px;
+	height: 100px;
+}
+
+.mask{
+	background: rgba(0,0,0,0.3);
+	width: 100%;
+	height: 100%;
+	border-radius: 4px 4px 0px 0px;
+}
+.more_link{
+	color: #f8f7f6;
+	text-decoration: none;
+	display: block;
+	position: relative;
+}
+
+.photo_wrapper:hover .mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.more_link_border{
+	position: absolute;
+	border: 2px solid #f8f7f6;
+	border-radius: 5px;
+	height: 30px;
+	width: 100px;
+	top: 45.5px;
+	left: 50%;
+	margin-left: -50px;
+	font-style: "OpenSans";
+	text-align: center;
+	line-height: 2em;
+}
+.more_link_border:hover{
+	box-shadow: 0px 0px 10px 0px #000000 inset;
+}
+.more_link_border:active{
+	box-shadow: 0px 0px 30px 0px #000000 inset;
+}
+.popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    color: #727070;
+    display: none;
+}
+.content_popup{
+	position: relative;
+	margin: 119px auto 0 400px;
+	padding-top: 24px;
+  border-radius: 5px;
+  background-color: #f1efee;
+  box-shadow: 0px 11px 27px 0px rgba(159, 159, 159, 0.75),inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
+  position: absolute;
+  width: 362px;
+}
+.popup_wrapper_form{
+  border-radius: 4px; 
+  width: 318px;
+  margin: 0 auto 0 auto;
+}
+
+.input_add_form{
+  border-width: 1px;
+  border-color: rgb(72, 203, 232);
+  border-style: solid;
+  border-color: rgb(214, 213, 211);
+  border-radius: 4px;
+  background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+  height: 39px;
+  width: 100%;
+  text-indent: 10px;
+  font-family: "OpenSans";
+  font-weight: 300px;
+  font-size: 12px;
+}
+.wrapper_row_add{
+	margin-bottom: 11px;
+}
+.textarea_add_form{
+	resize:none;
+	width: 312px;
+	height: 109px;
+}
+.margin_submit_add{
+	margin: 0 auto 27px 111px;
+
+}
+.close_wrapper{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	right: 6px;
+	top: 7px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.wrapper_for_cloud{
+	width: 25px;
+	height: 18px;
+	overflow: hidden;
+}
+
+.add_img{
+	cursor: pointer;
+	width: 264px;
+	border-right: 0;
+	border-radius: 4px 0 0 4px;
+}
+.wrapper_for_cloud{
+	background: url(img/cloud.png) no-repeat;
+	background-position: 50%;
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+  width: 52px;
+  height: 42px;
+  background-color: #ece9e9;
+  position: relative;
+  float: right;
+    border-width: 1px;
+ border-color: rgb(214, 213, 211);
+  border-style: solid;
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+.wrapper_for_cloud:hover{
+		background: url(img/cloud.png) no-repeat;
+	background-position: 50%;
+  box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+}
+.wrapper_for_cloud:active {
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.22),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
+.cloud_center{
+	position: absolute;
+	margin-left: 12.5px;
+	margin-top: 9px;
+	cursor: pointer;
+}
+
+.input_file{
+	opacity: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+}
+.content_popup:before{
+	content: "Добавление проекта";
+	  font-family: "OpenSans";
+  font-weight: 300px;
+  font-size: 12px;
+  color: #f8f7f6;
+  position: absolute;
+  top: -30px;
+  left: 20px;
+
+}
+.wrapper_form_add{
+	width: 960px;
+	height: 100%;
+	margin: 0 auto 0 auto;
+
 }
