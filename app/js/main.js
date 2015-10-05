@@ -8,11 +8,12 @@ $(function() {
 		/* Act on the event */
 	});
 
-	//$('.popup').on('click', function(event) {
+	//$('.popup').bind('click', function(event) {
 	//	PopUpHide();
-		/* Act on the event */
+	//	event.stopPropagation();
+	//	/* Act on the event */
 	//});
-	
+
 	$('.add_background').bind('click', function(e) {
 		//e.preventDefault();
 		//$('#popup_modal').bPopup();
@@ -29,8 +30,10 @@ $(function() {
 
 	$('.activate').addClass('disable_link');
 
-	$('.input_file[name]').on('change()', function(event) {
-		console.log($);
+	$('.input_file').on('change', function(event) {
+		console.log($(this).attr('value'));
+		var path = $(this).attr('value');
+		$('.add_img').attr('value', path);
 		//event.preventDefault();
 		/* Act on the event */
 	});
