@@ -31,8 +31,10 @@ $(function() {
 	$('.activate').addClass('disable_link');
 
 	$('.input_file').on('change', function(event) {
-		console.log($(this).attr('value'));
+		//console.log($(this).attr('value'));
 		var path = $(this).attr('value');
+		var indexPath = path.lastIndexOf('\\');
+		path =  path.slice(indexPath+1);		
 		$('.add_img').attr('value', path);
 		//event.preventDefault();
 		/* Act on the event */
