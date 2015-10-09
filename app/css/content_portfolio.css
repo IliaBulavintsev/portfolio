@@ -141,6 +141,11 @@
 .more_link_border:active{
 	box-shadow: 0px 0px 30px 0px #000000 inset;
 }
+/*______________________________________________________________*/
+/*______________________________________________________________*/
+/*_____________________________POPUP____________________________*/
+/*______________________________________________________________*/
+/*______________________________________________________________*/
 .popup{
     width:100%;
     min-height:100%;
@@ -153,7 +158,6 @@
 }
 .content_popup{
 	position: relative;
-	margin: 119px auto 0 400px;
 	padding-top: 24px;
   border-radius: 5px;
   background-color: #f1efee;
@@ -183,6 +187,8 @@
   font-family: "OpenSans";
   font-weight: 300px;
   font-size: 12px;
+  color: #727070;
+
 }
 .wrapper_row_add{
 	margin-bottom: 11px;
@@ -263,11 +269,5 @@
   position: absolute;
   top: -30px;
   left: 20px;
-
-}
-.wrapper_form_add{
-	width: 960px;
-	height: 100%;
-	margin: 0 auto 0 auto;
 
 }

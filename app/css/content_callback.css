@@ -15,9 +15,6 @@
 	float: right;
 }
 .border{
-  border-width: 1px;
-  border-color: rgb(72, 203, 232);
-  border-style: solid;
   border-style: solid;
   border-width: 1px;
   border-color: rgb(214, 213, 211);
@@ -26,6 +23,8 @@
   width: 190px;
   text-indent: 8px;
   font-size: 12px;
+  color: #727070;
+  font-family: "OpenSans";
 }
 .border:focus{
   border-width: 1px;

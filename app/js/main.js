@@ -1,23 +1,18 @@
 $(function() {
 	console.log(' main.js ready');
 	
-	PopUpHide();
-	
-	$('.close_wrapper').bind('click', function(event) {
-		PopUpHide();
+	$('.close_wrapper').on('click', function(event) {
+		$('.content_popup').bPopup().close();
 		/* Act on the event */
 	});
 
-	//$('.popup').bind('click', function(event) {
-	//	PopUpHide();
-	//	event.stopPropagation();
-	//	/* Act on the event */
-	//});
-
-	$('.add_background').bind('click', function(e) {
-		//e.preventDefault();
-		//$('#popup_modal').bPopup();
-		PopUpShow();
+	$('.add_background').on('click', function(event) {
+		event.preventDefault();
+		$('.content_popup').bPopup({
+			speed: 450,
+			opacity: 0.5,
+            transition: 'slideDown'
+		});
 		console.log("Call modal popUp");
 	});
 
@@ -39,13 +34,7 @@ $(function() {
 		//event.preventDefault();
 		/* Act on the event */
 	});
-	
-});
 
-function PopUpHide(){
-	$(".popup").fadeOut("slow");
-	console.log("popUp hide");
-}
-function PopUpShow(){
-	$(".popup").fadeIn("slow");
-}
+	// Add placeholder to IE8
+	//$('input , textarea').placeholder();
+});
