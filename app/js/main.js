@@ -1,5 +1,5 @@
 $(function() {
-	console.log(' main.js ready');
+	//console.log(' main.js ready');
 	
 	$('.close_wrapper').on('click', function(event) {
 		$('.content_popup').bPopup().close();
@@ -36,5 +36,5 @@ $(function() {
 	});
 
 	// Add placeholder to IE8
-	//$('input , textarea').placeholder();
+	
 });
