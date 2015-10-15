@@ -22,6 +22,8 @@
 		<link rel="stylesheet" href="css/content_about.css">
 		<link rel="stylesheet" href="css/content_portfolio.css">
 		<link rel="stylesheet" href="css/content_callback.css">
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
+		<link rel="stylesheet" href="css/qtips.css">
 
 		<!-- JS modernizer -->
 		<!--[if lt IE 9]>
@@ -249,30 +251,34 @@
 				</div>
 			</div>
 			
-				<form action="post" class="content_popup clearfix">
+				<form action="post" class="content_popup clearfix find_form">
 					<div class="close_wrapper">
 						<img src="css/img/x.png"  alt="close">
 					</div>
 					<div class="popup_wrapper_form">
 						<div class="wrapper_row_add">
 							<label class="lable_input regular">Название проекта</label>
-							<input type="text" class="input_add_form" placeholder="Введите название">
+							<input type="text" class="input_add_form" placeholder="Введите название" qtip-content="введите название"
+								   qtip-position="left">
 						</div>
 						<div class="wrapper_row_add clearfix">
 							<label class="lable_input regular">Картинка проекта</label>
-							<input type="text" class="input_add_form add_img" placeholder="Загрузите изображение" readonly>
+							<input type="text" class="input_add_form add_img border_box" placeholder="Загрузите изображение" readonly qtip-content="изображение"
+								   qtip-position="left">
 							<div class="wrapper_for_cloud border_box">
-								<input type="file" class="input_file">
+								<input type="file" class="input_file border_box">
 							</div>
 
 						</div>
 						<div class="wrapper_row_add">
 							<label class="lable_input regular">URL проекта</label>
-							<input type="text" class="input_add_form" placeholder="Добавьте ссылку">
+							<input type="text" class="input_add_form" placeholder="Добавьте ссылку" qtip-content="ссылка на проект"
+								   qtip-position="left">
 						</div>
 						<div class="wrapper_row_add">
 							<label class="lable_input regular">Описание</label>
-							<textarea  class="input_add_form textarea_add_form" placeholder="Пара слов о Вашем проекте"></textarea>
+							<textarea  class="input_add_form textarea_add_form" placeholder="Пара слов о Вашем проекте" qtip-content="описание проекта"
+									   qtip-position="left"></textarea>
 						</div>
 					</div>
 					<input type="submit" value="Добавить" class="submit regular margin_submit_add">
@@ -294,7 +300,11 @@
 		<!--SCRIPTS-->
 		<script src="bower/jquery/jquery.js"></script>
 		<script type="text/javascript" src="bower/bPopup/jquery.bpopup.js"></script>
-		<script scr="bower/jquery-placeholder/jquery.placeholder.min.js"></script>		
+		<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+		<script src="bower/qtip2/jquery.qtip.min.js"></script>
+		<script src="js/validation.js"></script>
+		<script src="js/submitForm.js"></script>
+		<script src="js/add_proj.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

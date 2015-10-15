@@ -22,6 +22,8 @@
 		<link rel="stylesheet" href="css/content_about.css">
 		<link rel="stylesheet" href="css/content_portfolio.css">
 		<link rel="stylesheet" href="css/content_callback.css">
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
+		<link rel="stylesheet" href="css/qtips.css">
 
 		<!-- JS modernizer -->
 		<!--[if lt IE 9]>
@@ -129,27 +131,37 @@
 							<article class="article  border_box clearfix callback_article">
 								<div class="header_article ">У вас интересный проект? Напишите мне</div>
 								<div class="wrapper_form">
-									<form action="" class="form_callback clearfix border_box">
+									<div class="somth_wrong_mess">
+										Что-то пошло не так!
+									</div>
+									<div class="well_done_mess">
+										Ваше письмо отправлено!
+									</div>
+									<form action="../php/callback.php" method="post" class="form_callback clearfix border_box find_form">
 										<div class="wrapper_row clearfix">
 											<div class="input left">
 												<label class="lable_input regular">Имя</label>
-												<input type="text" placeholder="Как к Вам обращаться" class="border border_input light_font">
+												<input name="name" type="text" placeholder="Как к Вам обращаться" class="border border_input light_font" qtip-content="введите имя"
+													   qtip-position="left">
 											</div>
 											<div class="input right">
 												<label class="lable_input regular">Email</label>
-												<input type="text" placeholder="Куда мне писать" class="border border_input light_font">
+												<input name="email" type="text" placeholder="Куда мне писать" class="border border_input light_font" qtip-content="введите email"
+													   qtip-position="right">
 											</div>											
 										</div>
 										<div class="wrapper_row">
 											<label class="lable_input regular">Сообщение</label>
-											<textarea placeholder="Кратко в чем суть" class="border border_textarea light_font"></textarea>
+											<textarea name="about_proj" placeholder="Кратко в чем суть" class="border border_textarea light_font" qtip-content="ваш вопрос"
+													  qtip-position="left"></textarea>
 										</div>
 										<div class="wrapper_row prelast_row clearfix">
 											<label class="lable_input regular">Введите код, указанный на картинке</label>
 											<div class="border border_capcha left">
 												<img src="" alt="тут капча">
 											</div>
-											<input type="text" placeholder="Введите код" class=" light_font border border_sub_capcha right">
+											<input name="captcha" type="text" placeholder="Введите код" class=" light_font border border_sub_capcha right" qtip-content="текст капчи"
+												   qtip-position="right">
 										</div>
 										<div class="wrapper_row last_row clearfix">
 												<input type="submit" class="left submit regular margin_button_left">
@@ -176,8 +188,11 @@
 
 		<!--SCRIPTS-->
 		<script src="bower/jquery/jquery.js"></script>
-		<script scr="bower/bPopup/jquery.bpopup.min.js"></script>
-		<script scr="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+		<script src="bower/bPopup/jquery.bpopup.min.js"></script>
+		<script src="bower/qtip2/jquery.qtip.min.js"></script>
+		<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+		<script src="js/validation.js"></script>
+		<script src="js/submitForm.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

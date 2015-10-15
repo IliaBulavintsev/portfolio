@@ -1,0 +1,55 @@
+.qtip_style{
+    background-color: #da7f60;
+    color: #9c5339;
+    font-family: "OpenSans-Semi";
+    font-size: 12px;
+    background-image: -moz-linear-gradient( 90deg, rgb(211,118,84) 0%, rgb(243,162,135) 90%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(211,118,84) 0%, rgb(243,162,135) 90%);
+    background-image: -ms-linear-gradient( 90deg, rgb(211,118,84) 0%, rgb(243,162,135) 90%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
+    border: 0;
+    /*border-radius: 5px;*/
+}
+
+
+.qtip_border{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(203, 105, 69);
+    border-radius: 3px;
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+
+.somth_wrong_mess{
+    border-width: 1px;
+    border-color: rgb(180, 105, 72);
+    border-style: solid;
+    border-radius: 4px;
+    background-color: #dec5b9;
+    background-color: rgba(180, 105, 72, 0.329);
+    color: #b46948;
+    width: 100%;
+    font-family: "OpenSans-Semi";
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+}
+.well_done_mess{
+    border-width: 1px;
+    border-color: #78ba7e);
+    border-style: solid;
+    border-radius: 4px;
+    background-color: #cce2cd;
+    color: #78ba7e;
+    width: 100%;
+    font-family: "OpenSans-Semi";
+    font-size: 16px;
+    margin-bottom: 10px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    display: none;
+}

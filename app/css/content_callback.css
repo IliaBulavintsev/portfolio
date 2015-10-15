@@ -27,13 +27,13 @@
   font-family: "OpenSans";
 }
 .border:focus{
-  border-width: 1px;
-  border-color: rgb(127, 202, 230);
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(180, 105, 72);
-  border-radius: 3px;
-  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(113, 111, 111, 0.1);
+  /*border-width: 1px;*/
+  /*border-color: rgb(127, 202, 230);*/
+  /*border-style: solid;*/
+  /*border-width: 1px;*/
+  /*border-color: rgb(180, 105, 72);*/
+  /*border-radius: 3px;*/
+  /*box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(113, 111, 111, 0.1);*/
   outline: none;
 }
 .lable_input{
@@ -135,6 +135,6 @@
 }
 .light_font{
     font-family: 'OpenSans';
-  font-weight: 300px;
+  font-weight: 300;
 }
 

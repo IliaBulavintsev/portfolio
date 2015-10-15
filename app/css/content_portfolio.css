@@ -186,10 +186,13 @@
   width: 100%;
   text-indent: 10px;
   font-family: "OpenSans";
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 12px;
   color: #727070;
 
+}
+.input_add_form:focus{
+	outline: none;
 }
 .wrapper_row_add{
 	margin-bottom: 11px;
@@ -227,8 +230,8 @@
 	background: url(img/cloud.png) no-repeat;
 	background-position: 50%;
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
-  width: 52px;
-  height: 42px;
+  width: 54px;
+  height: 39px;
   background-color: #ece9e9;
   position: relative;
   float: right;
@@ -264,7 +267,7 @@
 .content_popup:before{
 	content: "Добавление проекта";
 	  font-family: "OpenSans";
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 12px;
   color: #f8f7f6;
   position: absolute;
