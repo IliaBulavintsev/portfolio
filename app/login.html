@@ -23,6 +23,8 @@
 		<link rel="stylesheet" href="css/content_portfolio.css">
 		<link rel="stylesheet" href="css/content_callback.css">
 		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="bower/qtip2/jquery.qtip.min.css">
+		<link rel="stylesheet" href="css/qtips.css">
 
 		<!-- JS modernizer -->
 		<!--[if lt IE 9]>
@@ -37,13 +39,15 @@
 		<![endif]-->
 		<!--blocks-->
 		<div class="wrapper clearfix">
-			<form action="" class="login">
+			<form action="" class="login find_form">
 				<div class="wrapper_login_form">
 					<div class="input_login_wrapper">
-						<input type="text" class="input_login_border email_login border_box " placeholder="Введите Email">
+						<input type="text" class="input_login_border email_login border_box " placeholder="Введите Email" qtip-content="введите логин"
+							   qtip-position="right">
 					</div>
 					<div class="input_login_wrapper">
-						<input type="text" class="input_login_border key_login" placeholder="Введите пароль">
+						<input type="text" class="input_login_border key_login" placeholder="Введите пароль" qtip-content="введите пароль"
+							   qtip-position="right">
 					</div>
 					<div class="checkbox_login_wrapper">
 						<input type="checkbox" class="login_checkbox" checked> <span class="regular span_checkbox ">Запомнить меня?</span>
@@ -68,7 +72,10 @@
 
 		<!--SCRIPTS-->
 		<script src="bower/jquery/jquery.js"></script>
-		<script scr="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+		<script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+		<script src="bower/qtip2/jquery.qtip.min.js"></script>
+		<script src="js/validation.js"></script>
+		<script src="js/submitForm.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
